@@ -67,8 +67,8 @@ export function Hero({
           <HoverBorderGradient
             containerClassName="rounded-full"
             as="a"
-            href={ctaHref}
             className="bg-black text-white flex items-center space-x-3 px-8 py-4 text-lg cursor-pointer"
+            {...(ctaHref && { href: ctaHref })}
           >
             <Download className="h-5 w-5" />
             <span>{ctaLabel}</span>
